@@ -1,5 +1,9 @@
 # DataIngestion
 
+A demo application. It won't work for now.
+
+## Development
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

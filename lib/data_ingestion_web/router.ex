@@ -41,7 +41,7 @@ defmodule DataIngestionWeb.Router do
       live_dashboard "/dashboard",
         metrics: DataIngestionWeb.Telemetry,
         additional_pages: [
-          broadway: {BroadwayDashboard, pipelines: [DataIngestion.DemoPipeline]}
+          broadway: {BroadwayDashboard, pipelines: [DataIngestion.DemoPipeline, DataIngestion.AnotherDemo]}
         ]
     end
   end

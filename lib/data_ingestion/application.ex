@@ -16,6 +16,7 @@ defmodule DataIngestion.Application do
 
       # Fake things for this project
       DataIngestion.DemoPipeline,
+      DataIngestion.AnotherDemo,
       DataIngestion.FakeProducer,
 
       # Start the Endpoint (http/https)

@@ -13,6 +13,11 @@ defmodule DataIngestion.Application do
       DataIngestionWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: DataIngestion.PubSub},
+
+      # Fake things for this project
+      DataIngestion.DemoPipeline,
+      DataIngestion.FakeProducer,
+
       # Start the Endpoint (http/https)
       DataIngestionWeb.Endpoint
       # Start a worker by calling: DataIngestion.Worker.start_link(arg)

@@ -37,7 +37,12 @@ defmodule DataIngestionWeb.Router do
 
     scope "/" do
       pipe_through :browser
-      live_dashboard "/dashboard", metrics: DataIngestionWeb.Telemetry
+
+      live_dashboard "/dashboard",
+        metrics: DataIngestionWeb.Telemetry,
+        additional_pages: [
+          broadway: {BroadwayDashboard, pipelines: [DataIngestion.DemoPipeline]}
+        ]
     end
   end
 end
